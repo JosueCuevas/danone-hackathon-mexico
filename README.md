@@ -22,7 +22,7 @@ This website is constituted by five pages, all of them are fully responsive
 - **/products/id**: View showing details about the product. Like energy value, fat
   and carbohydrates. Also this view indicates if it comes from organic farming and its ingredients.
 
-* **profile** : View where users can access their profile and see their maximum
+* **/profile** : View where users can access their profile and see their maximum
   daily calorie limit, as well as their interest in products, they also have the option to modify these parameters if they wish
 
 ## INSTALLATION
