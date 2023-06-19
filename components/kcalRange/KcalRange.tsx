@@ -136,6 +136,7 @@ const KcalRange: React.FC = () => {
                 <div className="relative flex flex-wrap items-stretch">
                   <input
                     type="number"
+                    value={form.breakfast}
                     required
                     onChange={handleChange}
                     name="breakfast"
@@ -157,6 +158,7 @@ const KcalRange: React.FC = () => {
                 <div className="relative flex flex-wrap items-stretch">
                   <input
                     type="number"
+                    value={form.lunch}
                     required
                     onChange={handleChange}
                     name="lunch"
@@ -178,6 +180,7 @@ const KcalRange: React.FC = () => {
                 <div className="relative flex flex-wrap items-stretch">
                   <input
                     type="number"
+                    value={form.dinner}
                     required
                     onChange={handleChange}
                     name="dinner"
@@ -199,6 +202,7 @@ const KcalRange: React.FC = () => {
                 <div className="relative flex flex-wrap items-stretch">
                   <input
                     type="number"
+                    value={form.snacks}
                     required
                     onChange={handleChange}
                     name="snacks"

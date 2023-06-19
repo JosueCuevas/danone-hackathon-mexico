@@ -1,7 +1,7 @@
 import { UserSettings } from "@userSettings";
-import { RiPencilFill } from "react-icons/ri";
 import React, { useEffect, useState } from "react";
 import { IconContext } from "react-icons";
+import ReadAndUpdateSetting from "@components/read-and-update-setting/ReadAndUpdateSetting";
 
 const SettingCards: React.FC = () => {
   const [settings, setSettings] = useState<UserSettings | null>(null);
@@ -22,48 +22,25 @@ const SettingCards: React.FC = () => {
             }}
           >
             <div className="flex justify-between items-center p-3 border-b border-violetBlue rounded-md mb-2">
-              <span className="flex flex-col">
-                Breakfast:{" "}
-                <small className="text-sm text-violetBlue">
-                  {settings.form.breakfast}kcal{" "}
-                </small>{" "}
-              </span>
-              <span>
-                <RiPencilFill />
-              </span>
+              <ReadAndUpdateSetting
+                prop="breakfast"
+                value={settings.form.breakfast}
+              />
             </div>
             <div className="flex justify-between items-center p-3 border-b border-violetBlue rounded-md mb-2">
-              <span className="flex flex-col">
-                Lunch:{" "}
-                <small className="text-sm text-violetBlue">
-                  {settings.form.lunch}kcal
-                </small>
-              </span>
-              <span>
-                <RiPencilFill />
-              </span>
+              <ReadAndUpdateSetting prop="lunch" value={settings.form.lunch} />
             </div>
             <div className="flex justify-between items-center p-3 border-b border-violetBlue rounded-md mb-2">
-              <span className="flex flex-col">
-                Dinner:{" "}
-                <small className="text-sm text-violetBlue">
-                  {settings.form.dinner}kcal{" "}
-                </small>{" "}
-              </span>
-              <span>
-                <RiPencilFill />
-              </span>
+              <ReadAndUpdateSetting
+                prop="dinner"
+                value={settings.form.dinner}
+              />
             </div>
             <div className="flex justify-between items-center p-3 border-b border-violetBlue rounded-md mb-2">
-              <span className="flex flex-col">
-                Snacks:{" "}
-                <small className="text-sm text-violetBlue">
-                  {settings.form.snacks}kcal{" "}
-                </small>
-              </span>
-              <span>
-                <RiPencilFill />
-              </span>
+              <ReadAndUpdateSetting
+                prop="snacks"
+                value={settings.form.snacks}
+              />
             </div>
           </IconContext.Provider>
         </>
