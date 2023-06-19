@@ -14,7 +14,7 @@ This website is constituted by five pages, all of them are fully responsive
 
 - **/** (home): View showing an introduction to the application
 
-- **/daily-calorie-settings**: View where users can set their maximum daily calorie limit. This includes a form with range for set the daily amount of calories they wish to
+- **/daily-calorie-settings**: View where users can set their maximum daily calorie limit. This includes a form with range for setting the daily amount of calories they wish to
   consume as a maximum in a day. The data will be saved in your LocalStorage which we will use as a Database
 
 - **/products**: Catalogue listing Danone's products.
